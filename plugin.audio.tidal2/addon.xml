@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.tidal2" name="TIDAL2" version="2.1.0" provider-name="arneson">
+  <requires>
+    <import addon="xbmc.python" version="2.24.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.routing"/>
+    <import addon="script.module.m3u8"/>
+    <import addon="script.module.kodi-six"/>
+    <import addon="script.module.pyaes"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>audio</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="resources/lib"/>
+  <extension point="xbmc.service" library="service.py" start="login"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language>de en</language>
+    <summary lang="en_GB">Extended version of the TIDAL music add-on</summary>
+    <summary lang="de_DE">Erweiterte Version des TIDAL Music-Addons</summary>
+    <description lang="en_GB">Play music and video from TIDAL music streaming service.
+
+Requires subscription. Visit tidal.com for details.</description>
+    <description lang="de_DE">Spielt Music und Videos vom Streaming-Dienst TIDAL.
+
+Es wird ein Abbonement benötigt. Siehe tidal.com für Details.</description>
+    <disclaimer lang="en_GB">This is an unofficial client and is not supported nor endorsed by TIDAL.</disclaimer>
+    <disclaimer lang="de_DE">Dies ist eine inoffizieller Client, der von TIDAL nicht unterstützt wird.</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=200555</forum>
+    <source>https://github.com/arnesongit/plugin.audio.tidal2</source>
+    <news>v2.1.0 (2022-03-26)
+- The 'Artist' context menu now opens a popup if the selected item has more than one artist
+- Added a device selector dialog to select a device type from a TIDAL apk file
+- Added support for lyrics:
+  - The CU LRC Lyrics addon is used to display the TIDAL lyrics
+  - The CU LRC Lyrics addon can be installed from the TIDAL2 settings dialog
+  - The TIDAL2 lyrics scaper has to be installed as a CU LRC Lyrics scaper module.
+    This can also be done from the TIDAL2 settings dialog.
+    </news>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+      <screenshot>resources/screenshot000.jpg</screenshot>
+      <screenshot>resources/screenshot001.jpg</screenshot>
+      <screenshot>resources/screenshot002.jpg</screenshot>
+      <screenshot>resources/screenshot003.jpg</screenshot>
+      <screenshot>resources/screenshot004.jpg</screenshot>
+      <screenshot>resources/screenshot005.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>

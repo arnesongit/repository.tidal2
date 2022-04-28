@@ -1,0 +1,5 @@
+[B]Version 1.6.0[/B]
+- Downgraded version in addon.xml to use for Kodi 17.X
+
+[B]Version 1.6.1[/B]
+- Updated to PyAES 1.6.1
