@@ -28,7 +28,7 @@ then
 fi
 
 # Check if all files have 2 hard links (linked to original source file is intact)
-for name in `find "$REPO" -depth 1 -type d -not -name ".git" -not -name "$REPONAME" -exec basename {} \;`; do
+for name in `find "$REPO" -depth 1 -type d -not -name "script.module.pyaes" -not -name ".git" -not -name "$REPONAME" -exec basename {} \;`; do
     for name in `find $SRCDIR/$name -type f -not -links 2 -not -name "*.pyo" -not -name ".DS_Store"`; do
         echo "Hardlink to file missing:" $name
         ERRMSG="Please correct hard links first using: cd src_folder ; pax -rwlpe . dest_folder"
