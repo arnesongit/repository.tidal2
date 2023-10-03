@@ -1,6 +1,6 @@
 # Kodi Repository for my TIDAL2 Addon
 
-This branch is for Kodi 19 with Python 3 support.
+This branch is for Kodi >= 19 with Python 3 support.
 
 If you still use Kodi 17 or 18 please use the [Leia-Branch](https://github.com/arnesongit/repository.tidal2/tree/until-leia).
 
